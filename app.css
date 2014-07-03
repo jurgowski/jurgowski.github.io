@@ -61,6 +61,7 @@ and (max-device-width : 480px) {
 
     .codin {
         width: 80%;
+        border: 1px solid white;
     }
 
 }
