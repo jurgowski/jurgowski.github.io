@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+@media only screen
+and (min-device-width : 0px)
+and (max-device-width : 480px) {
+    *{
+        font-size: 100px;
+    }
+
+}
 
 body {
     margin: 0;
