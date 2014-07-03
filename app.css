@@ -11,6 +11,10 @@ and (max-device-width : 480px) {
         font-size: 100px;
     }
 
+    .codin {
+        width: 80%;
+    }
+
 }
 
 body {
