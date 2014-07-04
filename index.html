@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Kris Jurgowski</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/app.css">
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <script src="scripts/jquery.panelSnap.js"></script>
     <script>
         $(function(){
+            $('body').panelSnap();
+
             $('.name').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
                 $('.codin').addClass('animated fadeInUp')
@@ -20,18 +22,18 @@
     </script>
 </head>
 <body>
-    <div>
-        <div class="first">
-            <div class="name animated fadeInUp">Kris Jurgowski</div>
-            <img class="codin" src="coding.jpg">
-        </div>
-        <div class="second">
+    <section class="first">
+        <div class="name animated fadeInUp">Kris Jurgowski</div>
+        <img class="codin" src="assets/coding.jpg">
+    </section>
 
-        </div>
-        <div class="third">
+    <section class="second">
 
-        </div>
-    </div>
+    </section>
+
+    <section class="third">
+
+    </section>
 
 </body>
 
