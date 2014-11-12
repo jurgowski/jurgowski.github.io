@@ -23,6 +23,7 @@ section {
 }
 
 .name {
+    opacity: 0;
     width: 100%;
     font-size: 30px;
     padding-top: 50px;
@@ -45,9 +46,8 @@ section {
 }
 
 .profilePic {
-    opacity: 0;
     display: block;
-    width: 60%;
+    width: 300px;
     margin: 0 auto;
     border: 2px solid white;
     border-radius: 50%;
