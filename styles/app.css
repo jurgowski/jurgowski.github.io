@@ -22,14 +22,24 @@ section {
     background: #1abc9c;
 }
 
-.name {
-    opacity: 0;
-    width: 100%;
-    font-size: 30px;
+.bio {
     padding-top: 50px;
-    padding-bottom: 50px;
+    opacity: 0;
+}
+
+.name {
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 10px;
     text-align: center;
     margin: 0 auto;
+    color: #F1F1F1;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
     color: #F1F1F1;
 }
 

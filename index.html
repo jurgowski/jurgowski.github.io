@@ -13,7 +13,7 @@
         $(function(){
             $('body').panelSnap();
             $('.profilePic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $('.name').addClass('animated fadeInUp')
+                $('.bio').addClass('animated fadeInUp')
             });
         })
 
@@ -22,7 +22,10 @@
 <body>
     <section class="first">
         <img class="profilePic animated fadeInUp" src="assets/jurgowski.jpg">
-        <div class="name">Kris Jurgowski</div>
+        <div class="bio">
+            <div class="name">Kris Jurgowski</div>
+            <div class="description">iOS Developer</div>
+        </div>
     </section>
 
     <section class="second">
