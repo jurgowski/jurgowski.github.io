@@ -8,10 +8,8 @@
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="scripts/jquery.panelSnap.js"></script>
     <script>
         $(function(){
-            $('body').panelSnap();
             $('.profilePic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $('.bio').addClass('animated fadeInUp')
             });

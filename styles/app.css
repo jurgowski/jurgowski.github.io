@@ -10,7 +10,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+    background-color: #FFFFFF;
 }
 
 section {
@@ -74,9 +74,17 @@ section {
 }
 
 .profileContainer {
-    padding: 3em;
+    padding: 3em; /* For Safari 5.1 to 6.0 */
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#E0FFFF), to(#FFFFFF));
+    background: -webkit-linear-gradient(#E0FFFF, #FFFFFF);
+    background: -moz-linear-gradient(#E0FFFF, #FFFFFF);
+    background: -o-linear-gradient(#E0FFFF, #FFFFFF);
+    background: linear-gradient(#E0FFFF, #FFFFFF); 
 }
 
+{
+  
+}
 .profilePic {
     display: block;
     width: 25em;
