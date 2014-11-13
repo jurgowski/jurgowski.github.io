@@ -21,28 +21,26 @@ section {
 }
 
 .bio {
-    padding-top: 50px;
     opacity: 0;
-    padding-bottom: 50px;
 }
 
 .name {
     width: 100%;
-    font-size: 35px;
+    font-size: 2em;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: .3em;
     text-align: center;
     margin: 0 auto;
 }
 
 .description {
-    font-size: 20px;
+    font-size: 1.3em;
     text-align: center;
-    padding-bottom: 10px;
+    padding: .2em;
 }
 
 .links {
-    padding: 10px;
+    padding: 1em;
     margin: 0 auto;
     text-align: center;
 }
@@ -62,12 +60,12 @@ section {
 }
 
 .profileContainer {
-    padding-top: 50px;
+    padding: 3em;
 }
 
 .profilePic {
     display: block;
-    width: 300px;
+    width: 25em;
     margin: 0 auto;
     border: 2px solid white;
     border-radius: 50%;
