@@ -24,6 +24,10 @@ section {
     opacity: 0;
 }
 
+.portfolio {
+    opacity: 0;
+}
+
 .name {
     width: 100%;
     font-size: 2em;
@@ -57,6 +61,16 @@ section {
     display: inline-block;
     margin: 0px;
     padding: 1em;
+}
+
+.appLink {
+    display: inline-block;
+    padding: 1em;
+}
+
+.appImage {
+    border: 1px solid #888;
+    border-radius: 15%;
 }
 
 .profileContainer {
