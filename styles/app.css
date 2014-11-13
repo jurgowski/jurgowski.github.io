@@ -58,7 +58,7 @@ section {
 .profileLink {
     display: inline-block;
     margin: 0px;
-    padding: 10px;
+    padding: 1em;
 }
 
 .profileContainer {
@@ -75,18 +75,4 @@ section {
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
     padding-top: 0px;
-}
-
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-    *{
-        font-size: 100px;
-    }
-
-    .profilePic {
-        width: 80%;
-        border: 1px solid white;
-    }
-
 }
