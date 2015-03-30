@@ -1,12 +1,13 @@
-$(window).load(function()
-{
-    $('.profilePic').addClass('animated fadeInUp')
+var animStart = 'animated fadeInUp'
+var animEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+$(window).load(function() {
+    $('.profilePic').addClass(animStart)
 })
-$(function(){
-    $('.profilePic').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        $('.bio').addClass('animated fadeInUp')
+$(function() {
+    $('.profilePic').one(animEnd, function() {
+        $('.bio').addClass(animStart)
     });
-    $('.bio').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        $('.portfolio').addClass('animated fadeInUp')
+    $('.bio').one(animEnd, function() {
+        $('.portfolio').addClass(animStart)
     });
 })
