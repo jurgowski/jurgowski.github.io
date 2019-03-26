@@ -28,6 +28,10 @@ section {
     opacity: 0;
 }
 
+.past {
+    opacity: 0;
+}
+
 .name {
     width: 100%;
     font-size: 2em;
@@ -71,6 +75,9 @@ section {
 .appImage {
     border: 1px solid #888;
     border-radius: 15%;
+}
+
+.appIcon {
 }
 
 .profileContainer {
