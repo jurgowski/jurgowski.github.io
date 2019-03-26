@@ -10,4 +10,7 @@ $(function() {
     $('.bio').one(animEnd, function() {
         $('.portfolio').addClass(animStart)
     });
+    $('.portfolio').one(animEnd, function() {
+        $('.past').addClass(animStart)
+    });
 })
