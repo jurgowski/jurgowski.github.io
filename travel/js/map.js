@@ -10,23 +10,51 @@ map.geodata = am4geodata_worldHigh;
 // Set projection
 map.projection = new am4maps.projections.Miller();
 
+var visitedCountries = 
+[
+	"AT",
+	"BS",
+	"BQ",
+	"CA",
+	"CW",
+	"CZ",
+	"DE",
+	"DO",
+	"ES",
+	"FR",
+	"GB",
+	"IN",
+	"IT",
+	"MX",
+	"NL",
+	"NO",
+	"SK",
+	"JM",
+	"JP", 
+	"PL",
+	"VA",
+	"US",
+];
+
 // Create map polygon series
-var polygonSeries = new am4maps.MapPolygonSeries();
-polygonSeries.useGeodata = true;
+var visitedSeries = map.series.push(new am4maps.MapPolygonSeries());
+visitedSeries.useGeodata = true;
+visitedSeries.include = visitedCountries;
+visitedSeries.exclude = ["AQ"];
 
-map.series.push(polygonSeries);
-
-polygonSeries.exclude = ["AQ"];
+var unvisitedSeries = map.series.push(new am4maps.MapPolygonSeries());
+unvisitedSeries.useGeodata = true;
+unvisitedSeries.exclude = visitedCountries + ["AQ"];
 
 // Configure series
-var polygonTemplate = polygonSeries.mapPolygons.template;
-polygonTemplate.tooltipText = "{name}";
-polygonTemplate.fill = am4core.color("#74B266");
-polygonTemplate.togglable = true;
+var visitedTemplate = visitedSeries.mapPolygons.template;
+visitedTemplate.tooltipText = "{name}";
+visitedTemplate.fill = am4core.color("#74B266");
+visitedTemplate.togglable = true;
 
 // Set events to apply "active" state to clicked polygons
 var currentActive;
-polygonTemplate.events.on("hit", function (event) {
+visitedTemplate.events.on("hit", function (event) {
 	map.maxZoomLevel = 32;
 	if (currentActive == event.target) {
 		map.goHome();
@@ -40,7 +68,7 @@ polygonTemplate.events.on("hit", function (event) {
 
 // Create hover state and set alternative fill color
 var colorSet = new am4core.ColorSet();
-var hoverState = polygonTemplate.states.create("hover");
+var hoverState = visitedTemplate.states.create("hover");
 hoverState.properties.fill = colorSet.getIndex(0);
 
 map.deltaLongitude = -10;
