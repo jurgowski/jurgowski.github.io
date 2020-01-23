@@ -7,6 +7,6 @@
 .idea/vcs.xml
 .idea/workspace.xml
 .c9/**
-_site/
+_site
 Gemfile.lock
-.sass-cache/
+.sass-cache
