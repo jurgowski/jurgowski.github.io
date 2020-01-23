@@ -1,0 +1,9 @@
+{% assign group = site.data.apps[include.ref] %}
+<div class="description">{{ group.name }}</div>
+<div class="links">
+    <a class="appLink" href={{ group.links[0].link }}><img class={{ group.links[0].class }} src="assets/images/{{ group.links[0].image }}"></a>
+	{% for link in group.links offset:1 %}
+    <div class="hdivider"></div>
+    <a class="appLink" href={{ link.link }}><img class={{ link.class }} src="assets/images/{{ link.image }}"></a>
+	{% endfor %}
+</div>

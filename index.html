@@ -27,18 +27,10 @@ title: Krys Jurgowski
         </div>
     </div>
     <div class="portfolio">
-        <div class="description">Experience</div>
-        <div class="links">
-            <a class="appLink" href="https://messenger.com"><img class="appIcon" src="assets/images/messenger.png"></a>
-            <div class="hdivider"></div>
-            <a class="appLink" href="https://instagram.com"><img class="appIcon" src="assets/images/igicon.png"></a>
-            <div class="hdivider"></div>
-            <a class="appLink" href="https://facebook.com"><img class="appImage" src="assets/images/fblogo.png"></a>
-        </div>
+		{% include link_group.html ref="portfolio" %}
     </div>
     <div class="past">
-        <div class="description">Past</div>
-		{% include link_triplet.html %}
+		{% include link_group.html ref="past" %}
     </div>
 
 </body>

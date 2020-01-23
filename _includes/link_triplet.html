@@ -1,7 +1,0 @@
-<div class="links">
-    <a class="appLink" href={{ site.data.past[0].link }}><img class="appImage" src="assets/images/{{ site.data.past[0].image }}"></a>
-	{% for item in site.data.past offset:1 %}
-    <div class="hdivider"></div>
-    <a class="appLink" href={{ item.link }}><img class="appImage" src="assets/images/{{ item.image }}"></a>
-	{% endfor %}
-</div>
