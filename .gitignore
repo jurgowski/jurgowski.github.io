@@ -8,3 +8,5 @@
 .idea/workspace.xml
 .c9/**
 _site/
+Gemfile.lock
+.sass-cache/
